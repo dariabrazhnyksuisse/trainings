@@ -1,4 +1,10 @@
 <!DOCTYPE html>
+<!--
+JavaScript arrays are used to store multiple values in a single variable.
+Arrays are a special type of objects. The typeof operator in JavaScript returns "object" for arrays.
+
+But, JavaScript arrays are best described as arrays.
+ -->
 <html>
 <body>
 
@@ -6,19 +12,30 @@
 
 <p>Array indexes are zero-based, which means the first item is [0].</p>
 
-<p id="demo"></p
-  </br>
-  <p id="demo1"></p>
-  </br>
-  <p id="demo2"></p>
+<p>JavaScript array elements are accessed using numeric indexes (starting from 0).</p>
 
-
+<p id="demo"></p>
+</br>
+<p id="demo1"></p>
+</br>
+<p id="demo2"></p>
+</br>
+<p id="demo3"></p>
+</br>
+<p id="demo4"></p>
 
 <script>
-var cars = ["Saab","Volvo","BMW"];
+var cars = ["Saab", "Volvo", "BMW"];
+cars[3] = "Opel";
+//Access the Full Array
+document.getElementById("demo").innerHTML = cars;
+//
+var x = cars.length;   // The length property returns the number of elements
+var y = cars.sort();   // The sort() method sorts arrays
+//Accessing the Last Array Elemen
+var last = fruits[fruits.length - 1]
 
-document.getElementById("demo").innerHTML = cars[0];
-
+//===================================================
 //JavaScript objects are written with curly braces {}.
 var person = {
   firstName : "Tom",
@@ -31,7 +48,7 @@ document.getElementById("demo1").innerHTML =
 person.firstName + " is " + person.age + " years old.";
 
 //
-document.getElementById("demo").innerHTML =
+document.getElementById("demo2").innerHTML =
 typeof "Bob"+ "<br>" +
 typeof 314 + "<br>" +
 typeof 3.14 + "<br>" +

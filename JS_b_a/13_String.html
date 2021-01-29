@@ -1,0 +1,48 @@
+
+<!-- A JavaScript string is zero or more characters written inside quotes.
+
+\b	Backspace
+\f	Form Feed
+\n	New Line
+\r	Carriage Return
+\t	Horizontal Tabulator
+\v	Vertical Tabulator
+9
+-->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <p>The length property returns the length of a string:</p>
+
+    <p id="demo"></p>
+  </br>
+    <p id="demo2"></p>
+  </br>
+      <p id="demo3"></p>
+  <script>
+    var txt = "SuperDarya11";
+    var ln = txt.length;
+    document.getElementById("demo").innerHTML = ln;
+//The backslash (\) escape character turns special characters into string characters:
+var txt2 = "W cll the so-called \"Viking\" from the North.";
+document.getElementById("demo2").innerHTML = txt2;
+
+//
+var str = "Please locate where 'locate' occurs!";
+//The indexOf() method returns the index of (the position of) the first occurrence of a specified text in a string:
+var pos = str.indexOf("locate");
+document.getElementById("demo3").innerHTML = pos;
+
+//
+//The toString() method returns a number as a string.
+var x = 123;
+x.toString();            // returns 123 from variable x
+</script>
+
+  </body>
+</html>

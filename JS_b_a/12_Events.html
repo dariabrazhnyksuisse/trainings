@@ -5,4 +5,44 @@ Here are some examples of HTML events:
 An HTML web page has finished loading
 An HTML input field was changed
 An HTML button was clicked
+//
+<element event='some JavaScript'>
+With double quotes:
+<element event="some JavaScript">
+======================================================================
+Common HTML Events
+Here is a list of some common HTML events:
+
+Event	        Description
+onchange	    An HTML element has been changed
+onclick	      The user clicks an HTML element
+onmouseover	  The user moves the mouse over an HTML element
+onmouseout	  The user moves the mouse away from an HTML element
+onkeydown	    The user pushes a keyboard key
+onload	      The browser has finished loading the page
+======================================================================
+Event handlers can be used to handle and verify user input, user actions, and browser actions:
+
+Things that should be done every time a page loads
+Things that should be done when the page is closed
+Action that should be performed when a user clicks a button
+Content that should be verified when a user inputs data
+
  -->
+ <!DOCTYPE html>
+<html>
+<body>
+  <script>
+  function displayDate(){
+    document.getElementById("demo2").innerHTML = Date();
+  }
+  </script>
+
+<p>Click the button to display the date.</p>
+
+<button onclick="displayDate()">The time is?</button>
+
+
+<p id="demo2"></p>
+</body>
+</html>
