@@ -1,0 +1,57 @@
+<!--
+#JavaScript variables are containers for data values.
+#Objects are variables too. But objects can contain many values.
+
+In real life, a car is an object. Properties//	Methods
+
+car.name = Fiat
+car.model = 500
+car.weight = 850kg
+car.color = white
+//
+car.start()
+car.drive()
+car.brake()
+car.stop()
+//
+You can access object properties in two ways:
+
+objectName.propertyName
+or
+objectName["propertyName"]
+//
+To access an object method with the following syntax:
+
+objectName.methodName()
+//
+Avoid String, Number, and Boolean objects. They complicate your code and slow down execution speed.\
+var x = new String();        // Declares x as a String object
+var y = new Number();        // Declares y as a Number object
+var z = new Boolean();       // Declares z as a Boolean object
+-->
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Objects</h2>
+
+<p>An object method is a function definition, stored as a property value.</p>
+
+<p id="demo"></p>
+
+<script>
+// Create an object:
+var person = {
+  firstName: "John",
+  lastName : "Doe",
+  id     : 5566,
+  fullName : function() {
+    return this.firstName + " " + this.lastName;
+  }
+};
+// Display data from the object:
+document.getElementById("demo").innerHTML = person.fullName();
+</script>
+
+</body>
+</html>
