@@ -1,34 +1,36 @@
 <!DOCTYPE html>
 <html>
+
 <body>
 
-<p>Display the value of Boolean(10 > 9):</p>
+  <p>Display the value of Boolean(10 > 9):</p>
 
-<button onclick="myFunction()">Try it</button>
+  <button onclick="myFunction()">Try it</button>
 
-<p id="demo"></p>
+  <p id="demo"></p>
 
-<script>
-function myFunction() {
-  document.getElementById("demo").innerHTML = Boolean(10 > 9);
-}
+  <script>
+    function myFunction() {
+      document.getElementById("demo").innerHTML = Boolean(10 > 9);
+    }
 
-//Everything Without a "Value" is False
-var x = 0;
-Boolean(x);       // returns false
-//
-var x = -0;
-Boolean(x);       // returns false
+    //Everything Without a "Value" is False
+    var x = 0;
+    Boolean(x); // returns false
+    //
+    var x = -0;
+    Boolean(x); // returns false
 
-var x = null;
-Boolean(x);       // returns false
+    var x = null;
+    Boolean(x); // returns false
 
-var x = 10 / "H";
-Boolean(x);       // returns false NaNvar x = false;
-var y = new Boolean(false);
+    var x = 10 / "H";
+    Boolean(x); // returns false NaNvar x = false;
+    var y = new Boolean(false);
 
-// (x === y) is false because x and y have different types
-</script>
+    // (x === y) is false because x and y have different types
+  </script>
 
 </body>
+
 </html>

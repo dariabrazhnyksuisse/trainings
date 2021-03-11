@@ -6,73 +6,79 @@ Arrays are a special type of objects. The typeof operator in JavaScript returns 
 But, JavaScript arrays are best described as arrays.
  -->
 <html>
+
 <body>
 
-<h2>JavaScript Arrays</h2>
+  <h2>JavaScript Arrays</h2>
 
-<p>Array indexes are zero-based, which means the first item is [0].</p>
+  <p>Array indexes are zero-based, which means the first item is [0].</p>
 
-<p>JavaScript array elements are accessed using numeric indexes (starting from 0).</p>
+  <p>JavaScript array elements are accessed using numeric indexes (starting from 0).</p>
 
-<p id="demo"></p>
-</br>
-<p id="demo1"></p>
-</br>
-<p id="demo2"></p>
-</br>
-<p id="demo3"></p>
-</br>
-<p id="demo4"></p>
+  <p id="demo"></p>
+  </br>
+  <p id="demo1"></p>
+  </br>
+  <p id="demo2"></p>
+  </br>
+  <p id="demo3"></p>
+  </br>
+  <p id="demo4"></p>
 
-<script>
-var cars = ["Saab", "Volvo", "BMW"];
-cars[3] = "Opel";
-//Access the Full Array
-document.getElementById("demo").innerHTML = cars;
-//
-var x = cars.length;   // The length property returns the number of elements
-var y = cars.sort();   // The sort() method sorts arrays
-//Accessing the Last Array Elemen
-var last = fruits[fruits.length - 1]
+  <script>
+    var cars = ["Saab", "Volvo", "BMW"];
+    cars[3] = "Opel";
+    //Access the Full Array
+    document.getElementById("demo").innerHTML = cars;
+    //
+    var x = cars.length; // The length property returns the number of elements
+    var y = cars.sort(); // The sort() method sorts arrays
+    //Accessing the Last Array Elemen
+    var last = fruits[fruits.length - 1]
 
-//===================================================
-//JavaScript objects are written with curly braces {}.
-var person = {
-  firstName : "Tom",
-  lastName: "Black",
-  age: 50,
-  eyeColor: "green"
-};
+    //===================================================
+    //JavaScript objects are written with curly braces {}.
+    var person = {
+      firstName: "Tom",
+      lastName: "Black",
+      age: 50,
+      eyeColor: "green"
+    };
 
-document.getElementById("demo1").innerHTML =
-person.firstName + " is " + person.age + " years old.";
+    document.getElementById("demo1").innerHTML =
+      person.firstName + " is " + person.age + " years old.";
 
-//
-document.getElementById("demo2").innerHTML =
-typeof "Bob"+ "<br>" +
-typeof 314 + "<br>" +
-typeof 3.14 + "<br>" +
-typeof (3) + "<br>" +
-typeof (3 + 4);
+    //
+    document.getElementById("demo2").innerHTML =
+      typeof "Bob" + "<br>" +
+      typeof 314 + "<br>" +
+      typeof 3.14 + "<br>" +
+      typeof(3) + "<br>" +
+      typeof(3 + 4);
 
-//undefined and null are equal in value but different in type
-typeof undefined           // undefined
-typeof null                // object
+    //undefined and null are equal in value but different in type
+    typeof undefined // undefined
+    typeof null // object
 
-null === undefined         // false
-null == undefined          // true
-//
-typeof "John"              // Returns "string"
-typeof 3.14                // Returns "number"
-typeof true                // Returns "boolean"
-typeof false               // Returns "boolean"
-typeof x                   // Returns "undefined" (if x has no value)
-//
-typeof {name:'John', age:34} // Returns "object"
-typeof [1,2,3,4]             // Returns "object" (not "array", see note below)
-typeof null                  // Returns "object"
-typeof function myFunc(){}   // Returns "function"
-</script>
+    null === undefined // false
+    null == undefined // true
+    //
+    typeof "John" // Returns "string"
+    typeof 3.14 // Returns "number"
+    typeof true // Returns "boolean"
+    typeof false // Returns "boolean"
+    typeof x // Returns "undefined" (if x has no value)
+    //
+    typeof {
+      name: 'John',
+      age: 34
+    } // Returns "object"
+    typeof [1, 2, 3, 4] // Returns "object" (not "array", see note below)
+    typeof null // Returns "object"
+    typeof
+    function myFunc() {} // Returns "function"
+  </script>
 
 </body>
+
 </html>

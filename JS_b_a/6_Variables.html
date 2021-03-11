@@ -8,57 +8,58 @@ Fixed values are called Literals.
 Variable values are called Variables
 Numbers and String
 ------------------------------------------------------------
-===	equal value and equal type
-!==	not equal value or not equal type
+=== equal value and equal type
+!== not equal value or not equal type
 ------------------------------------------------------------
-&&	logical and
-||	logical or
-!	logical not
+&& logical and
+|| logical or
+! logical not
 ------------------------------------------------------------
-typeof	Returns the type of a variable
-instanceof	Returns true if an object is an instance of an object type
+typeof Returns the type of a variable
+instanceof Returns true if an object is an instance of an object type
 
- -->
- <!DOCTYPE html>
- <html>
- <body>
+-->
+<!DOCTYPE html>
+<html>
 
- <h2>JavaScript Expressions</h2>
+<body>
 
- <p>Expressions compute to values.</p>
+  <h2>JavaScript Expressions</h2>
 
- <p id="demo"></p>
- </br>
+  <p>Expressions compute to values.</p>
+
+  <p id="demo"></p>
+  </br>
   <p id="demo1"></p>
   </br>
   <p id="demo2"></p>
-</br>
-<p id="demo3"></p>
-</br>
-<p id="demo4"></p>
-</br>
-<p id="demo5"></p>
- <script>
-   var carName = "Volvo";
-   var x = "Tom" + " " + "White";
-   var y = 5 + 3 + "100";
-   var z = 3;
-   z++; //+1
-   var txt1 = "What a very ";
-   txt1 += "nice day";
+  </br>
+  <p id="demo3"></p>
+  </br>
+  <p id="demo4"></p>
+  </br>
+  <p id="demo5"></p>
+  <script>
+    var carName = "Volvo";
+    var x = "Tom" + " " + "White";
+    var y = 5 + 3 + "100";
+    var z = 3;
+    z++; //+1
+    var txt1 = "What a very ";
+    txt1 += "nice day";
 
- document.getElementById("demo").innerHTML = x;
- document.getElementById("demo1").innerHTML = carName;
- document.getElementById("demo2").innerHTML = y;
- document.getElementById("demo3").innerHTML = z;
- document.getElementById("demo4").innerHTML = txt1;
+    document.getElementById("demo").innerHTML = x;
+    document.getElementById("demo1").innerHTML = carName;
+    document.getElementById("demo2").innerHTML = y;
+    document.getElementById("demo3").innerHTML = z;
+    document.getElementById("demo4").innerHTML = txt1;
 
- var a = 5;
- //The exponentiation operator (**) raises the first operand to the power of the second operand.
- //x ** y produces the same result as Math.pow(x,y):
-document.getElementById("demo5").innerHTML = a ** 2;
+    var a = 5;
+    //The exponentiation operator (**) raises the first operand to the power of the second operand.
+    //x ** y produces the same result as Math.pow(x,y):
+    document.getElementById("demo5").innerHTML = a ** 2;
+  </script>
 
- </script>
+</body>
 
- </body>
- </html>
+</html>
