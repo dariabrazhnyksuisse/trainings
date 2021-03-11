@@ -1,0 +1,25 @@
+<!--A regular expression is a sequence of characters that forms a search pattern.
+
+The search pattern can be used for text search and text replace operations. -->
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click the button to do a global search for the numbers 1 to 4 in a string.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var str = "123456789";
+  var patt1 = /[1-4]/g;
+  var result = str.match(patt1);
+  document.getElementById("demo").innerHTML = result;
+}
+</script>
+
+</body>
+</html>
