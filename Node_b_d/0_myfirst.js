@@ -1,6 +1,6 @@
 /**
  * @Date:   2021-03-11T17:57:24+01:00
- * @Last modified time: 2021-03-11T19:10:09+01:00
+ * @Last modified time: 2021-03-11T20:58:09+01:00
 
  Hyper Text Transfer Protocol (HTTP).
  */
@@ -15,10 +15,12 @@ The function passed into the http.createServer()
 has a 'req' argument that represents the request from the client, as an object (http.IncomingMessage object).
 This object has a property called "url"
 */
- http.createServer(function (req, res) {
+http.createServer(function(req, res) {
 
-   res.writeHead(200, {'Content-Type': 'text/html'});
-   res.write("The date and time are currently" + dt.myDateTime());
-   res.write(req.url);
-   res.end();
- }).listen(8080);
+  res.writeHead(200, {
+    'Content-Type': 'text/html'
+  });
+  res.write("The date and time are currently. Coca-cola" + dt.myDateTime());
+  res.write(req.url);
+  res.end();
+}).listen(8080);
