@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+<body>
+  <!-- AngularJS modules define AngularJS applications.
+
+  AngularJS controllers control AngularJS applications.
+
+  The ng-app directive defines the application, the ng-controller directive defines the controller.
+
+@see pre-last example with an object
+@see last example is an array-->
+
+  <p>Try to change the names.</p>
+
+  <div ng-app="myApp" ng-controller="myCtrl" ng-init="myCol='lightblue';
+  quantity=1; cost=5; cola='Always Coca-Cola!';
+  person={firstName: 'Kate', lastName: 'Moss'};
+  points=[1, 15, 19, 2, 40]
+  ">
+
+    First Name: <input type="text" style="background-color:{{myCol}}" ng-model="firstName"><br>
+    <br>
+    Last Name: <input type="text" style="background-color:{{myCol}}" ng-model="lastName"><br>
+    <br>
+    Full Name: {{firstName + " " + lastName}}
+    <br>
+    <br>
+    <hr>
+    <p>Total to pay in CHF: <span ng-bind="quantity * cost"></span></p>
+    <p>{{firstName}} sings: {{cola}}</p>
+    <p><span ng-bind="cola"></span></p>
+    <hr>
+    <p> The name of a person is: {{person.firstName}}</p>
+    <hr>
+    <p> The third point is: {{points[2]}} </p>
+  </div>
+
+  <script>
+    //AngularJS modules define applications:
+    var app = angular.module('myApp', []);
+    //AngularJS controllers control applications:
+    app.controller('myCtrl', function($scope) {
+      $scope.firstName = "Darya";
+      $scope.lastName = "MOON";
+    });
+  </script>
+
+</body>
+
+</html>
