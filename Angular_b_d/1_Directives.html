@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+<body>
+  <!-- The ng-app directive tells AngularJS that the <div> element is the "owner" of an AngularJS application. -->
+
+  <div ng-app="" ng-init="firstName='Tom'">
+
+    <p>Input something in the input box:
+      <!-- The ng-model directive binds the value of the input field to the application variable name. -->
+    <p>Name: <input type="text" ng-model="name" placeholder="Enter name here"></p>
+
+    <!-- AngularJS expressions are written inside double braces: {{ expression }}. -->
+    <h1>Hello {{name}}</h1>
+
+    <p> My Angular expression 1: {{"Coca-Cola" }} </p>
+    <p> My Angular expression 2: {{5 + 5 }} </p>
+
+    <!-- The ng-bind directive binds application data to the HTML view.-->
+    <p ng-bind="name"></p>
+
+    <!--The ng-init directive initializes AngularJS application variables -->
+    <p>The name is <span ng-bind="firstName"></span></p>
+
+
+  </div>
+
+</body>
+
+</html>
