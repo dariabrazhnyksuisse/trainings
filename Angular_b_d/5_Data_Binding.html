@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+<body>
+
+
+  <div ng-app="myApp" ng-controller="myCtrl">
+    Name: <input ng-model="firstname">
+    <h1>{{firstname}}</h1>
+  </div>
+
+  <script>
+    //Data binding in AngularJS is the synchronization between the model and the view.
+    var app = angular.module('myApp', []);
+
+    //The scope is the binding part between the HTML (view) and the JavaScript (controller).
+    //The scope is an object with the available properties and methods.
+    //The scope is available for both the view and the controller.
+
+    app.controller('myCtrl', function($scope) {
+      $scope.firstname = "John";
+      $scope.lastname = "Doe";
+    });
+  </script>
+
+  <p>Change the name inside the input field, and the model data will change automatically, and therefore also the header will change its value.</p>
+
+</body>
+
+</html>
