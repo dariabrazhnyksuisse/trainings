@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="0_ContactForm_style.css">
+
+<body>
+
+  <h3>Contact Form</h3>
+
+  <div class="container">
+    <form action="/action_page.php">
+      <label for="fname">First Name</label>
+      <input type="text" id="fname" name="firstname" placeholder="Your name." required>
+
+      <label for="lname">Last Name</label>
+      <input type="text" id="lname" name="lastname" placeholder="Your last name." required>
+
+      <label>Country</label>
+      <select id="country" name="country">
+        <option value="australia">Australia</option>
+        <option value="canada">Canada</option>
+        <option value="usa">USA</option>
+      </select>
+
+      <label for="subject">Feedback</label>
+      <textarea id="fb" name="feedback" placeholder="Write something." style="height:200px" required></textarea>
+
+      <button type="submit" class="registerbtn">Submit</button>
+
+      <hr>
+      <p id="savedDB"></p>
+
+      <br>
+      <hr>
+
+    </form>
+  </div>
+
+
+
+  <script>
+    function createUser() {}
+    //create an object
+    <
+    p id = "demo" > < /p>
+    var firstName = document.getElementById("fname").value;
+    var lastName = document.getElementById("lname").value;
+    var country: = document.getElementById("country").value;
+    var feedback = document.getElementById("fb").value;
+
+    var person = {
+        firstName: document.getElementById("fname").value,
+        lastName: document.getElementById("lname").value,
+        country: document.getElementById("country").value,
+        feedback: document.getElementById("fb").value,
+        fullName: function() {
+          return this.firstName + " " + this.lastName;
+        };
+
+        // Display data from the object:
+        document.getElementById("savedDB").innerHTML = person.fullName();
+  </script>
+
+
+</body>
+
+</html>
