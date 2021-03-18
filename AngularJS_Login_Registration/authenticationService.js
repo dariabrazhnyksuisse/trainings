@@ -1,3 +1,10 @@
+/**
+ * @Date:   2021-03-15T20:54:51+01:00
+ * @Last modified time: 2021-03-15T22:05:15+01:00
+ */
+
+
+
 //authenticationService.js
 (function() {
   'use strict';
@@ -19,7 +26,7 @@
 
     function Login(username, password, callback) {
 
-      /* Dummy authentication for testing, uses $timeout to simulate api call
+      /* Authentication for testing, uses $timeout to simulate api call
        ----------------------------------------------*/
       $timeout(function() {
         var response;
